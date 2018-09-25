@@ -49,7 +49,9 @@ class LoginScreenComponent extends React.Component {
                 onChangeText={text => this.setState({ value: text })}
               />
               <WhiteSpace />
-              <Button onClick={this.handleSubmit}>text only</Button>
+              <Button onClick={this.handleSubmit}>
+                Toast Value of text box
+              </Button>
             </List>
           </Flex.Item>
         </Flex>
