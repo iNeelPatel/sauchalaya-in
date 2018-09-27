@@ -28,9 +28,11 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <LocaleProvider locale={enUS}>
-          <MainNavigator />
-        </LocaleProvider>
+        <KeyboardAvoidingView behavior="padding" enabled>
+          <LocaleProvider locale={enUS}>
+            <MainNavigator />
+          </LocaleProvider>
+        </KeyboardAvoidingView>
       </Provider>
     );
   }
