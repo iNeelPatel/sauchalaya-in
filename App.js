@@ -19,7 +19,7 @@ import {
 var Parse = require("parse/react-native");
 
 Parse.setAsyncStorage(AsyncStorage);
-Parse.initialize(appId, javascriptKey, masterKey);
+Parse.initialize("sauchalaya-in-api", "m5qW4jvMs%sN5kmN", "m5qW4jvMs%sN5kmN");
 Parse.serverURL = `${serverUrl}/parse`;
 
 import LoginScreen from "./component/form";

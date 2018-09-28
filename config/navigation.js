@@ -5,10 +5,12 @@ import {
 } from "react-navigation";
 
 import AuthScreen from "../src/screens/AuthScreen";
+import HomeScreen from "../src/screens/HomeScreen";
 
 const MainNavigator = createStackNavigator(
   {
-    auth: { screen: AuthScreen }
+    auth: { screen: AuthScreen },
+    home: { screen: HomeScreen }
   },
   {
     initialRouteName: "auth",
